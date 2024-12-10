@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D46274882D08C96B004444AC /* Around_EgyptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46274872D08C96B004444AC /* Around_EgyptApp.swift */; };
+		D462748A2D08C96B004444AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46274892D08C96B004444AC /* ContentView.swift */; };
+		D462748C2D08C96C004444AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D462748B2D08C96C004444AC /* Assets.xcassets */; };
+		D462748F2D08C96C004444AC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D462748E2D08C96C004444AC /* Preview Assets.xcassets */; };
+		D46274912D08C96C004444AC /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46274902D08C96C004444AC /* Persistence.swift */; };
+		D46274942D08C96C004444AC /* Around_Egypt.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D46274922D08C96C004444AC /* Around_Egypt.xcdatamodeld */; };
+		D462749E2D08C96C004444AC /* Around_EgyptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D462749D2D08C96C004444AC /* Around_EgyptTests.swift */; };
+		D46274A82D08C96C004444AC /* Around_EgyptUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46274A72D08C96C004444AC /* Around_EgyptUITests.swift */; };
+		D46274AA2D08C96C004444AC /* Around_EgyptUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46274A92D08C96C004444AC /* Around_EgyptUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D462749A2D08C96C004444AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D462747C2D08C96B004444AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D46274832D08C96B004444AC;
+			remoteInfo = "Around Egypt";
+		};
+		D46274A42D08C96C004444AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D462747C2D08C96B004444AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D46274832D08C96B004444AC;
+			remoteInfo = "Around Egypt";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D46274842D08C96B004444AC /* Around Egypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Around Egypt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46274872D08C96B004444AC /* Around_EgyptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Around_EgyptApp.swift; sourceTree = "<group>"; };
+		D46274892D08C96B004444AC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		D462748B2D08C96C004444AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D462748E2D08C96C004444AC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D46274902D08C96C004444AC /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		D46274932D08C96C004444AC /* Around_Egypt.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Around_Egypt.xcdatamodel; sourceTree = "<group>"; };
+		D46274992D08C96C004444AC /* Around EgyptTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Around EgyptTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D462749D2D08C96C004444AC /* Around_EgyptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Around_EgyptTests.swift; sourceTree = "<group>"; };
+		D46274A32D08C96C004444AC /* Around EgyptUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Around EgyptUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D46274A72D08C96C004444AC /* Around_EgyptUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Around_EgyptUITests.swift; sourceTree = "<group>"; };
+		D46274A92D08C96C004444AC /* Around_EgyptUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Around_EgyptUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D46274812D08C96B004444AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46274962D08C96C004444AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46274A02D08C96C004444AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D462747B2D08C96B004444AC = {
+			isa = PBXGroup;
+			children = (
+				D46274862D08C96B004444AC /* Around Egypt */,
+				D462749C2D08C96C004444AC /* Around EgyptTests */,
+				D46274A62D08C96C004444AC /* Around EgyptUITests */,
+				D46274852D08C96B004444AC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D46274852D08C96B004444AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D46274842D08C96B004444AC /* Around Egypt.app */,
+				D46274992D08C96C004444AC /* Around EgyptTests.xctest */,
+				D46274A32D08C96C004444AC /* Around EgyptUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D46274862D08C96B004444AC /* Around Egypt */ = {
+			isa = PBXGroup;
+			children = (
+				D46274872D08C96B004444AC /* Around_EgyptApp.swift */,
+				D46274892D08C96B004444AC /* ContentView.swift */,
+				D462748B2D08C96C004444AC /* Assets.xcassets */,
+				D46274902D08C96C004444AC /* Persistence.swift */,
+				D46274922D08C96C004444AC /* Around_Egypt.xcdatamodeld */,
+				D462748D2D08C96C004444AC /* Preview Content */,
+			);
+			path = "Around Egypt";
+			sourceTree = "<group>";
+		};
+		D462748D2D08C96C004444AC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D462748E2D08C96C004444AC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D462749C2D08C96C004444AC /* Around EgyptTests */ = {
+			isa = PBXGroup;
+			children = (
+				D462749D2D08C96C004444AC /* Around_EgyptTests.swift */,
+			);
+			path = "Around EgyptTests";
+			sourceTree = "<group>";
+		};
+		D46274A62D08C96C004444AC /* Around EgyptUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D46274A72D08C96C004444AC /* Around_EgyptUITests.swift */,
+				D46274A92D08C96C004444AC /* Around_EgyptUITestsLaunchTests.swift */,
+			);
+			path = "Around EgyptUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D46274832D08C96B004444AC /* Around Egypt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46274AD2D08C96C004444AC /* Build configuration list for PBXNativeTarget "Around Egypt" */;
+			buildPhases = (
+				D46274802D08C96B004444AC /* Sources */,
+				D46274812D08C96B004444AC /* Frameworks */,
+				D46274822D08C96B004444AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Around Egypt";
+			productName = "Around Egypt";
+			productReference = D46274842D08C96B004444AC /* Around Egypt.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D46274982D08C96C004444AC /* Around EgyptTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46274B02D08C96C004444AC /* Build configuration list for PBXNativeTarget "Around EgyptTests" */;
+			buildPhases = (
+				D46274952D08C96C004444AC /* Sources */,
+				D46274962D08C96C004444AC /* Frameworks */,
+				D46274972D08C96C004444AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D462749B2D08C96C004444AC /* PBXTargetDependency */,
+			);
+			name = "Around EgyptTests";
+			productName = "Around EgyptTests";
+			productReference = D46274992D08C96C004444AC /* Around EgyptTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D46274A22D08C96C004444AC /* Around EgyptUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D46274B32D08C96C004444AC /* Build configuration list for PBXNativeTarget "Around EgyptUITests" */;
+			buildPhases = (
+				D462749F2D08C96C004444AC /* Sources */,
+				D46274A02D08C96C004444AC /* Frameworks */,
+				D46274A12D08C96C004444AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D46274A52D08C96C004444AC /* PBXTargetDependency */,
+			);
+			name = "Around EgyptUITests";
+			productName = "Around EgyptUITests";
+			productReference = D46274A32D08C96C004444AC /* Around EgyptUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D462747C2D08C96B004444AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					D46274832D08C96B004444AC = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					D46274982D08C96C004444AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D46274832D08C96B004444AC;
+					};
+					D46274A22D08C96C004444AC = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = D46274832D08C96B004444AC;
+					};
+				};
+			};
+			buildConfigurationList = D462747F2D08C96B004444AC /* Build configuration list for PBXProject "Around Egypt" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D462747B2D08C96B004444AC;
+			productRefGroup = D46274852D08C96B004444AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D46274832D08C96B004444AC /* Around Egypt */,
+				D46274982D08C96C004444AC /* Around EgyptTests */,
+				D46274A22D08C96C004444AC /* Around EgyptUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D46274822D08C96B004444AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D462748F2D08C96C004444AC /* Preview Assets.xcassets in Resources */,
+				D462748C2D08C96C004444AC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46274972D08C96C004444AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46274A12D08C96C004444AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D46274802D08C96B004444AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46274912D08C96C004444AC /* Persistence.swift in Sources */,
+				D462748A2D08C96B004444AC /* ContentView.swift in Sources */,
+				D46274942D08C96C004444AC /* Around_Egypt.xcdatamodeld in Sources */,
+				D46274882D08C96B004444AC /* Around_EgyptApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D46274952D08C96C004444AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D462749E2D08C96C004444AC /* Around_EgyptTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D462749F2D08C96C004444AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D46274A82D08C96C004444AC /* Around_EgyptUITests.swift in Sources */,
+				D46274AA2D08C96C004444AC /* Around_EgyptUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D462749B2D08C96C004444AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D46274832D08C96B004444AC /* Around Egypt */;
+			targetProxy = D462749A2D08C96C004444AC /* PBXContainerItemProxy */;
+		};
+		D46274A52D08C96C004444AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D46274832D08C96B004444AC /* Around Egypt */;
+			targetProxy = D46274A42D08C96C004444AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D46274AB2D08C96C004444AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D46274AC2D08C96C004444AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D46274AE2D08C96C004444AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Around Egypt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shimaa.Around-Egypt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D46274AF2D08C96C004444AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Around Egypt/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shimaa.Around-Egypt";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D46274B12D08C96C004444AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shimaa.Around-EgyptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Around Egypt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Around Egypt";
+			};
+			name = Debug;
+		};
+		D46274B22D08C96C004444AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shimaa.Around-EgyptTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Around Egypt.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Around Egypt";
+			};
+			name = Release;
+		};
+		D46274B42D08C96C004444AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shimaa.Around-EgyptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Around Egypt";
+			};
+			name = Debug;
+		};
+		D46274B52D08C96C004444AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Shimaa.Around-EgyptUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Around Egypt";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D462747F2D08C96B004444AC /* Build configuration list for PBXProject "Around Egypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46274AB2D08C96C004444AC /* Debug */,
+				D46274AC2D08C96C004444AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46274AD2D08C96C004444AC /* Build configuration list for PBXNativeTarget "Around Egypt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46274AE2D08C96C004444AC /* Debug */,
+				D46274AF2D08C96C004444AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46274B02D08C96C004444AC /* Build configuration list for PBXNativeTarget "Around EgyptTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46274B12D08C96C004444AC /* Debug */,
+				D46274B22D08C96C004444AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D46274B32D08C96C004444AC /* Build configuration list for PBXNativeTarget "Around EgyptUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D46274B42D08C96C004444AC /* Debug */,
+				D46274B52D08C96C004444AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D46274922D08C96C004444AC /* Around_Egypt.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D46274932D08C96C004444AC /* Around_Egypt.xcdatamodel */,
+			);
+			currentVersion = D46274932D08C96C004444AC /* Around_Egypt.xcdatamodel */;
+			path = Around_Egypt.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D462747C2D08C96B004444AC /* Project object */;
+}
