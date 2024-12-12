@@ -13,7 +13,6 @@ struct MostRecentCardView: View {
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             ZStack(alignment: .topLeading) {
-                
                 AsyncImage(url: URL(string: experience.coverPhoto)) { image in
                     image
                         .resizable()
@@ -27,14 +26,13 @@ struct MostRecentCardView: View {
                 
                 Image("360")
                     .resizable()
-                    .frame(width: 37, height: 37)
-                    .padding(.top, 80)
+                    .frame(width: 40, height: 40)
+                    .padding(.top, 60)
                     .padding(.leading, 150)
                 
                 Image("info")
-                    .clipShape(Circle())
-                    .frame(width: 20, height: 20)
-                    .padding(8)
+                    .resizable()
+                    .frame(width: 24, height: 24)
                     .padding(.vertical, 6)
                     .padding(.leading, 300)
                 
@@ -45,31 +43,33 @@ struct MostRecentCardView: View {
                         .foregroundColor(.white)
                         .font(.custom("Gotham", size: 14))
                         .fontWeight(.bold)
+                    Spacer()
                     Image("multiple pictures")
-                        .frame(width: 20, height: 16)
-                        .padding(.leading, 235)
+                        .resizable()
+                        .frame(width: 20, height: 20)
                     
                 }
-                .padding(6)
+                .padding(8)
+                .padding(.horizontal, 8)
                 .padding(.top, 120)
-                .padding(.leading, 8)
             }
             
             VStack(alignment: .leading, spacing: 4) {
-                HStack{
+                HStack {
                     Text(experience.title)
                         .font(.headline)
                         .lineLimit(1)
                     
-                    HStack {
-                        Spacer()
-                        HStack(spacing: 4) {
-                            Text("\(experience.likesNo)")
-                                .font(.subheadline)
-                            Image("heart")
-                                .foregroundColor(.orange)
-                        }
-                    }.padding(.bottom, 4)
+                    Spacer()
+                    
+                    HStack(spacing: 4) {
+                        Text("\(experience.likesNo)")
+                            .font(.subheadline)
+                        Image("heart")
+                            .resizable()
+                            .frame(width: 20, height: 20)
+                            .foregroundColor(.orange)
+                    }
                 }
             }
             .padding(.horizontal, 8)

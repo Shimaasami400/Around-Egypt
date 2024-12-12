@@ -15,7 +15,6 @@ struct ContentView: View {
         NavigationView {
             ScrollView {
                 VStack {
-                    
                     HStack {
                         Button(action: {
                             print("Menu button tapped")
@@ -58,6 +57,7 @@ struct ContentView: View {
                             .foregroundColor(.red)
                             .padding()
                     } else {
+                        
                         Text("Recommended Experiences")
                             .font(.custom("Gotham", size: 22))
                             .bold()
@@ -72,6 +72,23 @@ struct ContentView: View {
                             .padding(.horizontal)
                         }
                     }
+                    
+                    Spacer()
+                    Spacer()
+                    
+                    if !viewModel.mostRecentExperiences.isEmpty {
+                        Text("Most Recent")
+                            .font(.custom("Gotham", size: 22))
+                            .bold()
+                        
+                        VStack(spacing: 16) {
+                            ForEach(viewModel.mostRecentExperiences) { experience in
+                                MostRecentCardView(experience: experience)
+                            }
+                        }
+                        .padding(.horizontal)
+                    }
+                    
                     Spacer()
                 }
             }

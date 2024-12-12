@@ -5,7 +5,6 @@
 //  Created by Shimaa on 10/12/2024.
 //
 
-
 import SwiftUI
 import Kingfisher
 
@@ -56,8 +55,7 @@ struct ExperienceCardView: View {
                 
                 HStack(spacing: 8) {
                     Image("eye")
-                        .resizable()
-                        .frame(width: 15, height: 15)
+                        .frame(width: 20, height: 25)
                     Text("\(experience.viewsNo)")
                         .foregroundColor(.white)
                         .font(.custom("Gotham", size: 14))

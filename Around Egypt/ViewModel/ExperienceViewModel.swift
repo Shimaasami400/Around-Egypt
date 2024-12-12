@@ -10,6 +10,7 @@ import Combine
 
 class ExperienceViewModel: ObservableObject {
     @Published var recommendedExperiences: [Experience] = []
+    @Published var mostRecentExperiences: [Experience] = []
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
 
@@ -19,6 +20,7 @@ class ExperienceViewModel: ObservableObject {
     init(networkService: ExperienceServiceProtocol = ExperienceNetworkService()) {
         self.networkService = networkService
         fetchRecommendedExperiences()
+        fetchMostRecentExperiences()
     }
 
     func fetchRecommendedExperiences() {
@@ -37,6 +39,26 @@ class ExperienceViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] experiences in
                 self?.recommendedExperiences = experiences
+            }
+            .store(in: &cancellables)
+    }
+
+    func fetchMostRecentExperiences() {
+        isLoading = true
+        errorMessage = nil
+
+        networkService.fetchMostRecentExperiences()
+            .sink { [weak self] completion in
+                guard let self = self else { return }
+                self.isLoading = false
+                switch completion {
+                case .failure(let error):
+                    self.errorMessage = error.localizedDescription
+                case .finished:
+                    break
+                }
+            } receiveValue: { [weak self] experiences in
+                self?.mostRecentExperiences = experiences
             }
             .store(in: &cancellables)
     }
