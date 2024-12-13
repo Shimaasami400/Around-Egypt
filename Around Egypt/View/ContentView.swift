@@ -36,7 +36,7 @@ struct ContentView: View {
                                 .padding(.horizontal)
                             
                             ForEach(viewModel.searchResults) { experience in
-                                ExperienceCardView(experience: experience)
+                                ExperienceCardView(viewModel: viewModel, experience: experience)
                             }
                         }
                     } else {
@@ -80,7 +80,7 @@ struct ContentView: View {
                                 ScrollView(.horizontal, showsIndicators: false) {
                                     HStack(spacing: 16) {
                                         ForEach(viewModel.recommendedExperiences) { experience in
-                                            ExperienceCardView(experience: experience)
+                                            ExperienceCardView(viewModel: viewModel, experience: experience)
                                         }
                                     }
                                     .padding(.horizontal)

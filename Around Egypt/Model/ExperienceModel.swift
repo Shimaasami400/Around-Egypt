@@ -23,10 +23,11 @@ struct Experience: Identifiable, Decodable {
     let coverPhoto: String
     let description: String
     let viewsNo: Int
-    let likesNo: Int
+    var likesNo: Int
     let recommended: Int
     let tags: [Tag]
     let city: City?
+    var liked: Bool?
     
     enum CodingKeys: String, CodingKey {
         case id
@@ -38,9 +39,18 @@ struct Experience: Identifiable, Decodable {
         case recommended
         case tags
         case city
+        case liked = "is_liked"
     }
     
     var isRecommended: Bool {
         return recommended == 1
+    }
+}
+
+struct LikeResponse: Decodable {
+    let likesNo: Int
+
+    enum CodingKeys: String, CodingKey {
+        case likesNo = "likes_no"
     }
 }

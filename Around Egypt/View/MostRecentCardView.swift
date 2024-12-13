@@ -70,10 +70,16 @@ struct MostRecentCardView: View {
                     HStack(spacing: 4) {
                         Text("\(experience.likesNo)")
                             .font(.subheadline)
-                        Image("heart")
+                        
+                        Image(systemName: experience.liked ?? false ? "heart.fill" : "heart")
                             .resizable()
                             .frame(width: 20, height: 20)
                             .foregroundColor(.orange)
+                            .onTapGesture {
+                                if !(experience.liked ?? false) {
+                                    viewModel.likeExperience(id: experience.id)
+                                }
+                            }
                     }
                 }
             }

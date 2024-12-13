@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ExperienceDetailsView: View {
     let experience: Experience
-
+    
     var body: some View {
         ScrollView {
             VStack(spacing: 16) {
-
+                
                 ZStack(alignment: .bottomLeading) {
                     AsyncImage(url: URL(string: experience.coverPhoto)) { image in
                         image
@@ -24,8 +24,7 @@ struct ExperienceDetailsView: View {
                     } placeholder: {
                         ProgressView()
                     }
-
-                    // Views Overlay
+                    
                     HStack(spacing: 8) {
                         Image("eye")
                             .frame(width: 20, height: 25)
@@ -42,20 +41,20 @@ struct ExperienceDetailsView: View {
                     .padding(.horizontal, 8)
                     .padding(.top, 120)
                 }
-
+                
                 HStack(alignment: .top) {
                     VStack(alignment: .leading, spacing: 4) {
                         Text(experience.title)
                             .font(.title3)
                             .bold()
-
+                        
                         Text("\(experience.city?.name ?? ""), Egypt.")
                             .font(.subheadline)
                             .foregroundColor(.gray)
                     }
-
+                    
                     Spacer()
-
+                    
                     HStack(spacing: 4) {
                         Image(systemName: "heart.fill")
                             .foregroundColor(.orange)
@@ -64,14 +63,14 @@ struct ExperienceDetailsView: View {
                     }
                 }
                 .padding(.horizontal, 16)
-
+                
                 Divider()
-
+                
                 VStack(alignment: .leading, spacing: 8) {
                     Text("Description")
                         .font(.headline)
                         .padding(.bottom, 4)
-
+                    
                     Text(experience.description)
                         .font(.body)
                         .lineSpacing(4)

@@ -9,13 +9,13 @@ import SwiftUI
 import Kingfisher
 
 struct ExperienceCardView: View {
+    @ObservedObject var viewModel: ExperienceViewModel
     let experience: Experience
     @State private var isSheetPresented = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             ZStack(alignment: .topLeading) {
-
                 AsyncImage(url: URL(string: experience.coverPhoto)) { image in
                     image
                         .resizable()
@@ -86,10 +86,16 @@ struct ExperienceCardView: View {
                     HStack(spacing: 4) {
                         Text("\(experience.likesNo)")
                             .font(.subheadline)
-                        Image("heart")
+                        
+                        Image(systemName: experience.liked ?? false ? "heart.fill" : "heart")
                             .resizable()
                             .frame(width: 20, height: 20)
                             .foregroundColor(.orange)
+                            .onTapGesture {
+                                if !(experience.liked ?? false) {
+                                    viewModel.likeExperience(id: experience.id)
+                                }
+                            }
                     }
                 }
             }
