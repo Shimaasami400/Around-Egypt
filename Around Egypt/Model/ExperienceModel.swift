@@ -27,7 +27,7 @@ struct Experience: Identifiable, Decodable {
     let recommended: Int
     let tags: [Tag]
     let city: City?
-
+    
     enum CodingKeys: String, CodingKey {
         case id
         case title
@@ -39,7 +39,7 @@ struct Experience: Identifiable, Decodable {
         case tags
         case city
     }
-
+    
     var isRecommended: Bool {
         return recommended == 1
     }
