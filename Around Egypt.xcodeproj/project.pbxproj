@@ -14,6 +14,8 @@
 		D439ADB52D0C1287007ED19B /* ExperienceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D439ADB42D0C1287007ED19B /* ExperienceDetailsView.swift */; };
 		D4512A9B2D0B22A000CC2EC7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4512A9A2D0B22A000CC2EC7 /* APIService.swift */; };
 		D4512A9D2D0B22C100CC2EC7 /* ExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4512A9C2D0B22C100CC2EC7 /* ExperienceViewModel.swift */; };
+		D4543FE62D0C90A7007C0A77 /* MockExperienceNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4543FE52D0C90A7007C0A77 /* MockExperienceNetworkService.swift */; };
+		D4543FE82D0C90C0007C0A77 /* MockExperienceNetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4543FE72D0C90C0007C0A77 /* MockExperienceNetworkServiceTests.swift */; };
 		D455BC622D0B1605007799E2 /* MostRecentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D455BC612D0B1605007799E2 /* MostRecentCardView.swift */; };
 		D46274882D08C96B004444AC /* Around_EgyptApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46274872D08C96B004444AC /* Around_EgyptApp.swift */; };
 		D462748A2D08C96B004444AC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D46274892D08C96B004444AC /* ContentView.swift */; };
@@ -57,6 +59,8 @@
 		D439ADB42D0C1287007ED19B /* ExperienceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsView.swift; sourceTree = "<group>"; };
 		D4512A9A2D0B22A000CC2EC7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D4512A9C2D0B22C100CC2EC7 /* ExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewModel.swift; sourceTree = "<group>"; };
+		D4543FE52D0C90A7007C0A77 /* MockExperienceNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExperienceNetworkService.swift; sourceTree = "<group>"; };
+		D4543FE72D0C90C0007C0A77 /* MockExperienceNetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockExperienceNetworkServiceTests.swift; sourceTree = "<group>"; };
 		D455BC612D0B1605007799E2 /* MostRecentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentCardView.swift; sourceTree = "<group>"; };
 		D46274842D08C96B004444AC /* Around Egypt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Around Egypt.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D46274872D08C96B004444AC /* Around_EgyptApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Around_EgyptApp.swift; sourceTree = "<group>"; };
@@ -214,6 +218,8 @@
 			isa = PBXGroup;
 			children = (
 				D462749D2D08C96C004444AC /* Around_EgyptTests.swift */,
+				D4543FE52D0C90A7007C0A77 /* MockExperienceNetworkService.swift */,
+				D4543FE72D0C90C0007C0A77 /* MockExperienceNetworkServiceTests.swift */,
 			);
 			path = "Around EgyptTests";
 			sourceTree = "<group>";
@@ -494,7 +500,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D4543FE62D0C90A7007C0A77 /* MockExperienceNetworkService.swift in Sources */,
 				D462749E2D08C96C004444AC /* Around_EgyptTests.swift in Sources */,
+				D4543FE82D0C90C0007C0A77 /* MockExperienceNetworkServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -651,6 +659,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Around Egypt/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -681,6 +690,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Around Egypt/Preview Content\"";
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
