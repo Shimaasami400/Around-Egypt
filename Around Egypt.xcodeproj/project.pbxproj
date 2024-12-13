@@ -10,6 +10,7 @@
 		123648C0358F6425F6CBC96D /* Pods_Around_Egypt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5BBC94F69B36D84D81FA8C5 /* Pods_Around_Egypt.framework */; };
 		A039176125927248870E3939 /* Pods_Around_EgyptTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A83E9A54910ECAACE68FF1C0 /* Pods_Around_EgyptTests.framework */; };
 		CF6676FC1F8B772F3E2D6F0B /* Pods_Around_Egypt_Around_EgyptUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6505FAF1F013775A203A2C56 /* Pods_Around_Egypt_Around_EgyptUITests.framework */; };
+		D439ADB52D0C1287007ED19B /* ExperienceDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D439ADB42D0C1287007ED19B /* ExperienceDetailsView.swift */; };
 		D4512A9B2D0B22A000CC2EC7 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4512A9A2D0B22A000CC2EC7 /* APIService.swift */; };
 		D4512A9D2D0B22C100CC2EC7 /* ExperienceViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4512A9C2D0B22C100CC2EC7 /* ExperienceViewModel.swift */; };
 		D455BC622D0B1605007799E2 /* MostRecentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D455BC612D0B1605007799E2 /* MostRecentCardView.swift */; };
@@ -51,6 +52,7 @@
 		6505FAF1F013775A203A2C56 /* Pods_Around_Egypt_Around_EgyptUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Around_Egypt_Around_EgyptUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F271A058A467178561E50E /* Pods-Around Egypt-Around EgyptUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Around Egypt-Around EgyptUITests.release.xcconfig"; path = "Target Support Files/Pods-Around Egypt-Around EgyptUITests/Pods-Around Egypt-Around EgyptUITests.release.xcconfig"; sourceTree = "<group>"; };
 		A83E9A54910ECAACE68FF1C0 /* Pods_Around_EgyptTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Around_EgyptTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D439ADB42D0C1287007ED19B /* ExperienceDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceDetailsView.swift; sourceTree = "<group>"; };
 		D4512A9A2D0B22A000CC2EC7 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
 		D4512A9C2D0B22C100CC2EC7 /* ExperienceViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExperienceViewModel.swift; sourceTree = "<group>"; };
 		D455BC612D0B1605007799E2 /* MostRecentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MostRecentCardView.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 				D46274B62D08D222004444AC /* SearchBar.swift */,
 				D455BC612D0B1605007799E2 /* MostRecentCardView.swift */,
 				D46274B82D08D844004444AC /* ExperienceCardView.swift */,
+				D439ADB42D0C1287007ED19B /* ExperienceDetailsView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -474,6 +477,7 @@
 				D462748A2D08C96B004444AC /* ContentView.swift in Sources */,
 				D46274B92D08D844004444AC /* ExperienceCardView.swift in Sources */,
 				D46274B72D08D222004444AC /* SearchBar.swift in Sources */,
+				D439ADB52D0C1287007ED19B /* ExperienceDetailsView.swift in Sources */,
 				D455BC622D0B1605007799E2 /* MostRecentCardView.swift in Sources */,
 				D46274942D08C96C004444AC /* Around_Egypt.xcdatamodeld in Sources */,
 				D46274882D08C96B004444AC /* Around_EgyptApp.swift in Sources */,

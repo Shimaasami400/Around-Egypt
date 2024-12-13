@@ -12,6 +12,7 @@ class ExperienceViewModel: ObservableObject {
     @Published var recommendedExperiences: [Experience] = []
     @Published var mostRecentExperiences: [Experience] = []
     @Published var searchResults: [Experience] = []
+    @Published var selectedExperience: Experience? = nil
     @Published var isLoading: Bool = false
     @Published var errorMessage: String? = nil
     @Published var searchText: String = "" {
@@ -83,6 +84,24 @@ class ExperienceViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] experiences in
                 self?.searchResults = experiences
+            }
+            .store(in: &cancellables)
+    }
+    
+    func fetchExperienceDetails(for id: String) {
+        isLoading = true
+        errorMessage = nil
+        networkService.fetchExperienceDetails(for: id)
+            .sink { [weak self] completion in
+                self?.isLoading = false
+                switch completion {
+                case .failure(let error):
+                    self?.errorMessage = error.localizedDescription
+                case .finished:
+                    break
+                }
+            } receiveValue: { [weak self] experience in
+                self?.selectedExperience = experience
             }
             .store(in: &cancellables)
     }

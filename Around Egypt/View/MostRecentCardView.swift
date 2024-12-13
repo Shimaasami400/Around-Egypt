@@ -9,6 +9,8 @@ import SwiftUI
 
 struct MostRecentCardView: View {
     let experience: Experience
+    @StateObject private var viewModel = ExperienceViewModel()
+    @State private var isSheetPresented = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
@@ -17,6 +19,10 @@ struct MostRecentCardView: View {
                     image
                         .resizable()
                         .scaledToFill()
+                        .onTapGesture {
+                            viewModel.fetchExperienceDetails(for: experience.id)
+                            isSheetPresented = true
+                        }
                 } placeholder: {
                     Color.gray
                 }
@@ -47,7 +53,6 @@ struct MostRecentCardView: View {
                     Image("multiple pictures")
                         .resizable()
                         .frame(width: 20, height: 20)
-                    
                 }
                 .padding(8)
                 .padding(.horizontal, 8)
@@ -76,5 +81,8 @@ struct MostRecentCardView: View {
         }
         .frame(width: 339)
         .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 2)
+        .sheet(isPresented: $isSheetPresented) {
+            ExperienceDetailsView(experience: viewModel.selectedExperience ?? experience)
+        }
     }
 }

@@ -10,14 +10,19 @@ import Kingfisher
 
 struct ExperienceCardView: View {
     let experience: Experience
+    @State private var isSheetPresented = false
     
     var body: some View {
         VStack(alignment: .leading, spacing: 8) {
             ZStack(alignment: .topLeading) {
+
                 AsyncImage(url: URL(string: experience.coverPhoto)) { image in
                     image
                         .resizable()
                         .scaledToFill()
+                        .onTapGesture {
+                            isSheetPresented = true
+                        }
                 } placeholder: {
                     Color.gray
                 }
@@ -64,7 +69,6 @@ struct ExperienceCardView: View {
                     Image("multiple pictures")
                         .resizable()
                         .frame(width: 20, height: 20)
-                    
                 }
                 .padding(8)
                 .padding(.horizontal, 8)
@@ -93,5 +97,8 @@ struct ExperienceCardView: View {
         }
         .frame(width: 339)
         .shadow(color: .gray.opacity(0.3), radius: 4, x: 0, y: 2)
+        .sheet(isPresented: $isSheetPresented) {
+            ExperienceDetailsView(experience: experience)
+        }
     }
 }

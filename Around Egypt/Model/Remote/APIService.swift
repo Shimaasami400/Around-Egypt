@@ -12,6 +12,7 @@ protocol ExperienceServiceProtocol {
     func fetchRecommendedExperiences() -> AnyPublisher<[Experience], Error>
     func fetchMostRecentExperiences() -> AnyPublisher<[Experience], Error>
     func searchExperiences(with title: String) -> AnyPublisher<[Experience], Error>
+    func fetchExperienceDetails(for id: String) -> AnyPublisher<Experience, Error>
 }
 
 class ExperienceNetworkService: ExperienceServiceProtocol {
@@ -56,6 +57,19 @@ class ExperienceNetworkService: ExperienceServiceProtocol {
             .receive(on: DispatchQueue.main)
             .eraseToAnyPublisher()
     }
+    
+    func fetchExperienceDetails(for id: String) -> AnyPublisher<Experience, Error> {
+            let urlString = "https://aroundegypt.34ml.com/api/v2/experiences/\(id)"
+            guard let url = URL(string: urlString) else {
+                return Fail(error: URLError(.badURL)).eraseToAnyPublisher()
+            }
+            
+            return URLSession.shared.dataTaskPublisher(for: url)
+                .map(\.data)
+                .decode(type: Experience.self, decoder: JSONDecoder())
+                .receive(on: DispatchQueue.main)
+                .eraseToAnyPublisher()
+        }
 }
 
 struct APIResponse: Decodable {
